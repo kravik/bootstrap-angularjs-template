@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app="mainApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>HTML5 + Bootstrap + AngularJS Template</title>
+
+    <!--build:css css/main.min.css -->
+    <link href="libs/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <!-- endbuild -->
+  </head>
+
+  <body ng-controller="demoController">
+    <div class="fluid-container">
+        <section class="bg-primary">
+          <div class="row">
+            <div class="col-sm-10 col-sm-offset-1">
+              <h2 class="text-center">Welcome to HTML5 + Bootstrap 3 + AngularJS 1.5 Template</h1>
+            </div>
+          </div>
+        </section>
+        <section class="bg-info">
+          <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+              <h3>Form Group</h3>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                <p class="text-danger">Example block-level help text here.</p>
+                <button type="button" class="btn btn-default">Submit</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="bg-success">
+          <div class="row gallary">
+            <div class="col-lg-3 col-md-4 col-xs-6" ng-repeat="item in items">
+              <a class="thumbnail" href="#">
+                <img class="img-responsive" src="http://farm{{item.farm}}.staticflickr.com/{{item.server}}/{{item.id}}_{{item.secret}}_b.jpg" alt="" class="img-rounded">
+              </a>
+            </div>
+          </div>
+        </section>
+    </div>
+    <!--build:js js/app.min.js -->
+    <script src="libs/jquery/dist/jquery.js"></script>
+    <script src="libs/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="libs/angular/angular.js"></script>
+    <script src="js/app.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
